@@ -1,7 +1,7 @@
 module convert_3d_sub_to_1d_array #(
-    parameter BIT_WIDTH = 4,
-    parameter ROWS = 8,
-    parameter COLS = 8,
+    parameter int BIT_WIDTH = 4,
+    parameter int ROWS = 8,
+    parameter int COLS = 8,
     parameter SUB_ROWS = 4,
     parameter SUB_COLS = 4
 ) (
