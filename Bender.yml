@@ -1,7 +1,7 @@
 # Package metadata. Required.
 package:
   # The name of the package. Required.
-  name: verilog-array-shape-conversion
+  name: verilog-array-operations
 
   # The list of package authors and contributors. Optional.
   # By convention, authors should be listed in the form shown below.
