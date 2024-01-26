@@ -1,0 +1,28 @@
+# Package metadata. Required.
+package:
+  # The name of the package. Required.
+  name: verilog-array-shape-conversion
+
+  # The list of package authors and contributors. Optional.
+  # By convention, authors should be listed in the form shown below.
+  authors: ["Douwe den Blanken <douwedb@gmail.com>"]
+
+# Freeze any dependency updates. Optional. False if omitted.
+# Useful for chip packages. Once the chip is in final tapeout mode, and
+# dependency updates would require disastrous amounts of re-verification.
+frozen: false
+
+# List of source files in this package. Optional.
+sources:
+  - target: rtl
+    files:
+      - src/conditional_3d_array.v
+
+      - src/convert_1d_to_2d_array.v
+      - src/convert_2d_to_1d_array.v
+      - src/convert_1d_to_3d_array.v
+      - src/convert_3d_to_1d_array.v
+      - src/convert_1d_to_3d_sub_array.v
+      - src/convert_3d_sub_to_1d_array.v
+
+      - src/to_diagonal_3d_array.v
