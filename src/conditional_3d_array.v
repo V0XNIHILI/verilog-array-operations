@@ -8,7 +8,7 @@ module conditional_3d_array #(
     input [BIT_WIDTH-1:0] if_true [ROWS-1:0][COLS-1:0],
     input [BIT_WIDTH-1:0] if_false[ROWS-1:0][COLS-1:0],
 
-    output [BIT_WIDTH-1:0] result[ROWS-1:0][COLS-1:0]
+    output [BIT_WIDTH-1:0] out[ROWS-1:0][COLS-1:0]
 );
 
     wire [ROWS*COLS*BIT_WIDTH-1:0] if_true_1d;
@@ -39,7 +39,7 @@ module conditional_3d_array #(
         .COLS(COLS)
     ) convert_1d_to_3d_array_inst (
         .in (condition ? if_true_1d : if_false_1d),
-        .out(result)
+        .out(out)
     );
 
 endmodule
