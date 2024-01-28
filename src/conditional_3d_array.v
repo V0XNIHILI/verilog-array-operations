@@ -4,8 +4,10 @@ module conditional_3d_array #(
     parameter int COLS = 8
 ) (
     input condition,
-    input [BIT_WIDTH-1:0] if_true[ROWS-1:0][COLS-1:0],
+
+    input [BIT_WIDTH-1:0] if_true [ROWS-1:0][COLS-1:0],
     input [BIT_WIDTH-1:0] if_false[ROWS-1:0][COLS-1:0],
+
     output [BIT_WIDTH-1:0] result[ROWS-1:0][COLS-1:0]
 );
 
