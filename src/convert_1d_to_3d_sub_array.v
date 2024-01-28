@@ -2,8 +2,8 @@ module convert_1d_to_3d_sub_array #(
     parameter int BIT_WIDTH = 4,
     parameter int ROWS = 8,
     parameter int COLS = 8,
-    parameter SUB_ROWS = 4,
-    parameter SUB_COLS = 4
+    parameter int SUB_ROWS = 4,
+    parameter int SUB_COLS = 4
 ) (
     input [ROWS*COLS*BIT_WIDTH-1:0] in,
     output [BIT_WIDTH-1:0] out[ROWS-1:0][COLS-1:0]
