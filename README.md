@@ -6,16 +6,16 @@ This repository contains a few simple modules to perform, among other things, ar
 
 ### `convert_1d_to_2d_array` (and vice versa for `convert_2d_to_1d_array`)
 
-Input:
+Input (`12'b011011100101`):
 
-|   |   |   |   |   |   |   |   |   |   |   |   |
+|MSB|   |   |   |   |   |   |   |   |   |   |LSB|
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 | ***1*** | ***1*** | ***1*** | ***0*** | 0 | 1 | 0 | 1 |
 
 Output:
 
 |idx|   |   |   |   |
 |---|---|---|---|---|
 | 0 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 0 |
+| 1 | ***1*** | ***1*** | ***1*** | ***0*** |
 | 2 | 0 | 1 | 1 | 0 |
