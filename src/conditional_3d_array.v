@@ -1,7 +1,7 @@
 module conditional_3d_array #(
-    parameter int BIT_WIDTH = 4,
-    parameter int ROWS = 8,
-    parameter int COLS = 8
+    parameter integer BIT_WIDTH = 4,
+    parameter integer ROWS = 8,
+    parameter integer COLS = 8
 ) (
     input condition,
 
