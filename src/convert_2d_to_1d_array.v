@@ -5,7 +5,7 @@ module convert_2d_to_1d_array
     parameter integer BIT_WIDTH = 4,
     parameter integer COLS = 8
 ) (
-    input [BIT_WIDTH-1:0] in[COLS-1:0],
+    input [BIT_WIDTH-1:0] in[COLS],
     output [COLS*BIT_WIDTH-1:0] out
 );
 

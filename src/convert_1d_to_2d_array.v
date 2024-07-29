@@ -6,7 +6,7 @@ module convert_1d_to_2d_array
     parameter integer COLS = 8
 ) (
     input [COLS*BIT_WIDTH-1:0] in,
-    output [BIT_WIDTH-1:0] out[COLS-1:0]
+    output [BIT_WIDTH-1:0] out[COLS]
 );
 
     genvar i;

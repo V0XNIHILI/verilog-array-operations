@@ -4,7 +4,7 @@ module convert_3d_sub_to_1d_array #(
     parameter integer COLS = 8,
     parameter integer SUB_ROWS = 4
 ) (
-    input [BIT_WIDTH-1:0] in[ROWS-1:0][COLS-1:0],
+    input [BIT_WIDTH-1:0] in[ROWS][COLS],
     output [ROWS*COLS*BIT_WIDTH-1:0] out
 );
 

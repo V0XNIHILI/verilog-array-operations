@@ -49,7 +49,7 @@ localparam ROWS = 8;
 localparam COLS = 8;
 
 wire [ENTRY_BIT_WIDTH-1:0] diagonal_value = ...;
-wire [ENTRY_BIT_WIDTH-1:0] out_data [ROWS-1:0][COLS-1:0];
+wire [ENTRY_BIT_WIDTH-1:0] out_data [ROWS][COLS];
 
 to_diagonal_3d_array #(
     .BIT_WIDTH(ENTRY_BIT_WIDTH),
@@ -69,9 +69,9 @@ localparam ROWS = 8;
 localparam COLS = 8;
 
 wire condition = ...;
-wire [ENTRY_BIT_WIDTH-1:0] pass_if_true [ROWS-1:0][COLS-1:0];
-wire [ENTRY_BIT_WIDTH-1:0] pass_if_false [ROWS-1:0][COLS-1:0];
-wire [ENTRY_BIT_WIDTH-1:0] out_data [ROWS-1:0][COLS-1:0];
+wire [ENTRY_BIT_WIDTH-1:0] pass_if_true [ROWS][COLS];
+wire [ENTRY_BIT_WIDTH-1:0] pass_if_false [ROWS][COLS];
+wire [ENTRY_BIT_WIDTH-1:0] out_data [ROWS][COLS];
 
 conditional_3d_array #(
     .BIT_WIDTH(ENTRY_BIT_WIDTH),

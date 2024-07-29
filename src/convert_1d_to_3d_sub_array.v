@@ -6,7 +6,7 @@ module convert_1d_to_3d_sub_array #(
     parameter integer SUB_COLS = 4
 ) (
     input [ROWS*COLS*BIT_WIDTH-1:0] in,
-    output [BIT_WIDTH-1:0] out[ROWS-1:0][COLS-1:0]
+    output [BIT_WIDTH-1:0] out[ROWS][COLS]
 );
 
     genvar i;

@@ -4,7 +4,7 @@ module to_diagonal_3d_array #(
     parameter integer COLS = 8
 ) (
     input  [BIT_WIDTH-1:0] in,
-    output [BIT_WIDTH-1:0] out[ROWS-1:0][COLS-1:0]
+    output [BIT_WIDTH-1:0] out[ROWS][COLS]
 );
 
     genvar i;

@@ -5,10 +5,10 @@ module conditional_3d_array #(
 ) (
     input condition,
 
-    input [BIT_WIDTH-1:0] if_true [ROWS-1:0][COLS-1:0],
-    input [BIT_WIDTH-1:0] if_false[ROWS-1:0][COLS-1:0],
+    input [BIT_WIDTH-1:0] if_true [ROWS][COLS],
+    input [BIT_WIDTH-1:0] if_false[ROWS][COLS],
 
-    output [BIT_WIDTH-1:0] out[ROWS-1:0][COLS-1:0]
+    output [BIT_WIDTH-1:0] out[ROWS][COLS]
 );
 
     wire [ROWS*COLS*BIT_WIDTH-1:0] if_true_1d;
